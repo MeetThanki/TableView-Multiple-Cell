@@ -11,9 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension UIColor {
-    var isDark: Bool {
-        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        self.getRed(&r, green: &g, blue: &b, alpha: &a)
-        return  (0.2126 * r + 0.7152 * g + 0.0722 * b) < 0.50
+    static func random() -> UIColor {
+        return UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1.0)
     }
 }
