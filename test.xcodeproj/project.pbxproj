@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		127C175D24D8251B0083E271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127C175C24D8251B0083E271 /* AppDelegate.swift */; };
-		127C175F24D8251B0083E271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127C175E24D8251B0083E271 /* SceneDelegate.swift */; };
 		127C176124D8251B0083E271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127C176024D8251B0083E271 /* ViewController.swift */; };
 		127C176424D8251B0083E271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127C176224D8251B0083E271 /* Main.storyboard */; };
 		127C176624D8251C0083E271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127C176524D8251C0083E271 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		127C175924D8251B0083E271 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127C175C24D8251B0083E271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		127C175E24D8251B0083E271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		127C176024D8251B0083E271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		127C176324D8251B0083E271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		127C176524D8251C0083E271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,13 +54,12 @@
 		127C175B24D8251B0083E271 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				127C175C24D8251B0083E271 /* AppDelegate.swift */,
-				127C175E24D8251B0083E271 /* SceneDelegate.swift */,
-				127C176024D8251B0083E271 /* ViewController.swift */,
-				127C176224D8251B0083E271 /* Main.storyboard */,
-				127C176524D8251C0083E271 /* Assets.xcassets */,
-				127C176724D8251C0083E271 /* LaunchScreen.storyboard */,
 				127C176A24D8251C0083E271 /* Info.plist */,
+				127C176524D8251C0083E271 /* Assets.xcassets */,
+				127C175C24D8251B0083E271 /* AppDelegate.swift */,
+				127C176024D8251B0083E271 /* ViewController.swift */,
+				127C176724D8251C0083E271 /* LaunchScreen.storyboard */,
+				127C176224D8251B0083E271 /* Main.storyboard */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 			files = (
 				127C176124D8251B0083E271 /* ViewController.swift in Sources */,
 				127C175D24D8251B0083E271 /* AppDelegate.swift in Sources */,
-				127C175F24D8251B0083E271 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXLC3PQNC8;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.deltasiege.DeltaSiege.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXLC3PQNC8;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.deltasiege.DeltaSiege.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
